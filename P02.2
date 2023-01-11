@@ -1,0 +1,19 @@
+2.#Calcula la calificación en palabras de la nota de un examen almacenada en una variable (5 y 6 aprobado, 7 y 8 notable, 9 y 10 sobresaliente) mediante una estructura switch
+
+def grade_in_words(note):
+    grade = None
+    # Switch statement
+    if note < 5:
+        grade = "Suspendido"
+    elif note >= 5 and note <= 6:
+        grade = "Aprobado"
+    elif note >= 7 and note <= 8:
+        grade = "Notable"
+    elif note >= 9 and note <= 10:
+        grade = "Sobresaliente"
+    else:
+        grade = "Nota inválida"
+    return grade
+
+grade = grade_in_words(note)
+print(grade)
