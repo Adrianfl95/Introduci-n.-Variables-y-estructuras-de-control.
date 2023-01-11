@@ -1,0 +1,10 @@
+4.#4. Muestra la fecha y hora en al menos dos formatos distintos
+
+import datetime
+
+# Fecha y hora actual en formato "YYYY-MM-DD HH:MM:SS"
+now = datetime.datetime.now()
+print("Fecha y hora actual (YYYY-MM-DD HH:MM:SS):", now.strftime("%Y-%m-%d %H:%M:%S"))
+
+# Fecha y hora actual en formato "DD/MM/YYYY HH:MM:SS"
+print("Fecha y hora actual (DD/MM/YYYY HH:MM:SS):", now.strftime("%d/%m/%Y %H:%M:%S"))
