@@ -1,0 +1,51 @@
+3.#3. Declara dos arrays:
+
+* uno de motos con cuatro motos
+
+* uno de coches con cuatro coches
+
+A continuación
+
+a) Recorre uno de los arrays mostrando sus elementos
+
+b) Ordena y muestra sus elementos
+
+c) Haz que lo indicado en a y b se realice mediante una llamada a la funcion mostrarResultadosOrdenados
+
+d) Indica por pantalla cuantos elementos hay
+
+e) Busca si un elemento se encuentro e informa de ello
+
+# Declarar dos arrays
+motos = ["Harley Davidson", "Yamaha R1", "Kawasaki Ninja", "Ducati Panigale"]
+coches = ["Lamborghini Aventador", "Ferrari 488", "Porsche 911", "McLaren 720s"]
+
+# Recorrer uno de los arrays mostrando sus elementos
+def mostrar_resultados(array):
+    for element in array:
+        print(element)
+        
+print("Vehículos disponibles: ")
+mostrar_resultados(motos)
+
+# Ordenar y mostrar sus elementos
+def mostrar_resultados_ordenados(array):
+    array.sort()
+    for element in array:
+        print(element)
+        
+print("Vehículos ordenados: ")
+mostrar_resultados_ordenados(motos)
+
+# Indica por pantalla cuantos elementos hay
+print("Número de vehículos disponibles: ", len(motos))
+
+# Buscar si un elemento se encuentra e informar de ello
+def buscar_elemento(elemento, array):
+    if elemento in array:
+        print(elemento, "se encuentra en el listado.")
+    else:
+        print(elemento, "no se encuentra en el listado.")
+        
+buscar_elemento("Yamaha R1", motos)
+buscar_elemento("Audi R8", motos)
