@@ -1,0 +1,26 @@
+ GNU nano 4.8                                                                                                                   probandophp.php                                                                                                                               
+<?php
+/*  3. Muestra los números del 1 al 10. Hazlo con distintas estructuras repetitivas
+*/
+$x = 1;
+
+while($x < 10) {
+  echo "The number is: $x <br>";
+  $x+=1;
+}
+?>
+
+<?php
+$x = 1;
+
+do {
+  echo "The number is: $x <br>";
+  $x++;
+} while ($x < 10);
+?>
+
+<?php
+for ($x = 1; $x < 10; $x+=1) {
+  echo "The number is: $x <br>";
+}
+?>
