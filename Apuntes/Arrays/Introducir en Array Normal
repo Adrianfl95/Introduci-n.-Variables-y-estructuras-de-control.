@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$nota = array(10, 5, 0);
+array_push($nota, 8);
+
+foreach($nota as $x_value) {
+    echo "Nota: " . $x_value . "<br>";
+}
+?>
+
+</body>
+</html>
+//Para introducir valor en un lugar concreto "$nota[]= 10;" lo que vaya entre los corchetes es la posición, incluido el 0.
