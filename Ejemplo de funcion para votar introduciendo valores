@@ -1,0 +1,16 @@
+<?php
+function votar($nome, $idade) {
+$hoy = date("d/m/y");
+
+if
+
+($idade >= 18) {echo "$nome, puede votar, hoy es $hoy";
+}
+else 
+
+{echo "$nome, no puede votar, hoy es $hoy";
+        }
+}
+votar("Adrian", 27);
+
+?>
